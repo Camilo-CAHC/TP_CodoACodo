@@ -136,7 +136,7 @@ a{
 
  table th {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     font-size: 30px;
+     font-size: 15px;
  }
 
  table td {
@@ -149,20 +149,20 @@ a{
  }
 
  table td:first-child {
-     width: 10%;
+     width: 5%;
      text-align: center;
      font-size: 2em;
      
  }
 
  table td:nth-child(2) {
-     width: 10%;
+     width: 5%;
      text-align: center;
  }
 
  table td:nth-child(3) {
-     width: 25%;
-     font-size: 1.5em;
+     width: 10%;
+     font-size: 1em;
      
  }
 
@@ -200,7 +200,6 @@ a{
     background:white;
     font-weight: 100;
     padding: 0% 0% 0% 0%;
-    text-align: center;
 }
 
 .tarjetaMenu{
@@ -208,7 +207,7 @@ a{
     border-radius: 0.5vw;
     border: solid 1px;
     width:45%;
-    height: 150px;
+    height: 100px;
     margin: 1% 1% 1% 1%;
     background-color: rgb(199, 240, 240);
 }
@@ -216,15 +215,15 @@ a{
 .imagenesTarjetas{
     border-top-left-radius: 0.5vh;
     border-bottom-left-radius: 0.5vh;
-    height: 150px;
+    height: 100px;
     padding:0%;
     float: left;
-    width: 150px;
+    width: 100px;
 }
 
 .titulosTarjetas{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 80%;
+    font-size: 45%;
     text-align: left;
     margin-left: 10%;
     padding: 2% 0% 0% 0%;
@@ -234,14 +233,14 @@ a{
 
 .parrafosTarjetas{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 65%;
+    font-size: 40%;
     text-align: left;
     margin: -3% 0% 0% 0%;
 }
 
 .precio{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 60%;
+    font-size: 45%;
     font-style:italic;
     margin: 2% 0% 0% 5%;
     float: left;
@@ -256,7 +255,7 @@ a{
     border-color: white;
     border-radius: 0.3vw;
     margin: 2% 0% 0% 19%;
-    padding: 1% 2% 1% 2%;
+    padding: 0.25% 0.5% 0.25% 0.5%;
     opacity: 80%;
 }
 
@@ -309,22 +308,12 @@ a{
   padding: 20px 0;
   font-size: 30px;
 }
-header{
-    width: 100%;
-}
-
-iframe{
-    width: 100%;
-    height: 260px;
-}
-#alturaFooter{
-    height: 91px;
-}
-
 
 @media only screen and (max-width: 1240px){
     .tarjetaMenu {
         width: 80%;
+
+}
 
 }
 @media only screen and (max-width: 768px){
@@ -368,8 +357,7 @@ h4{
             padding: 2%;
             font-size: 3.5vw;
             text-align: justify;
-}
-}
+}}
 h4{
     font-size: 5vw;
 }
@@ -384,5 +372,4 @@ table td img {
    margin: 0 auto;
     width: 100%;
 }
-
 

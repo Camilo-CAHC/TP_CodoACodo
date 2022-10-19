@@ -1,81 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viandas saludables</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" type="image/x-icon" href="./imagenes/logo.png">
+    <title>Salud Viandah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link  rel="icon" type="image/x-icon" href="./Imagenes/logo.png">
+    <link rel="stylesheet" href="./css/estilos2.css">  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
 </head>
 
-
 <body>
-    <header>
-        <div class="grid-container">
-            <div class="item1" style= "background-color: rgb(199, 240, 240)">
-                <div>
-                    <img id="logo" src="./imagenes/logo.png" alt="logo">
-                    <h3 class="nombre">Salud Viandah
-                    </h3>
-                </div>
-                <div id="pestañas">
-                    <a class="pest" href="index.html">Nosotros</a>
-                    <a class="pest" href="menu.html">Menu</a>
-                    <a class="pest" href="pedidos.html">Pedidos</a>
-                    <a class="pest" href="recetas.html">Recetas</a>
-                    <a class="pest" href="#contacto">Contacto</a>
+  <header>
+    <!-- place navbar here -->
+    <div>
+        <img id="logo" src="./imagenes/logo.png" alt="logo">
+        <span style class="nombre" id="slogan">Salud Viandah</span>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light  border-3 border-bottom ">
+            <div class="container-fluid">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon" ></span>
+                    </button>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-12 mt-6">
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./promociones.html">Promociones</a></li>
+                    </ul>
                 </div>
             </div>
-    </header>
+        </nav>
+    </div>    
 
-    <br><br>
+  </header>
+  <main>
+    <br>
+        <div class="container mt-3">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide">Promo Mercado Pago -30%</li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/mpprom.png" class="w-100 d-block" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Mercado Pago</h3>
+                            <p>Promo Mercado Pago -30%</p>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.mercadopago.com.ar">Acá</a>
 
-    <main>
-        <br><br>
-<div class="form">
-    <h2>Completa el formulario y hacenos tu pedido</h2><br><br><br>
-        <form action="https://formsubmit.co/manugonzo1111@gmail.com" method="post">
-            <label for="Nombre">Nombre:</label>
-            <input size="37" type="text" name="Nombre" id="Nombre"><br><br>
-            <label for="Apellido">Apellido:</label>
-            <input size="37" type="text" name="Apellido" id="Apellido"><br><br>
-            <label type="email">Email:</label>
-            <input size="40" type="email" name="email" id="email"><br><br>
-            <label for="phone">Teléfono:</label>
-            <input size="37" type="number"  name="Teléfono" id="num.teléfono"><br><br>
-            <label for="text">Mensaje:</label>
-            <input heigh="100" weigh="100" type="text" name="numero de teléfono" id="message"><br><br>
-            <label type="text">Calle:</label>
-            <input size="40"type="text" name="Calle" id="Calle">*<br><br>
-            <h5>*Recordá que los envíos son sólo dentro de CABA</h5><br>
-            <label for="number">Número:</label>
-            <input size="25" type="number" name="Altura" id="altura"><br><br>
-            <label type="text">Dpto:</label>
-            <input size="25" type="text" name="dpto" id="dpto"><br><br>
-            <label for="menus">Menúes:</label>
-            <select name="menus" id="opc.menu">
-                <option value="0"></option>
-                <option value="1">Ensalada de Langostinos</option>
-                <option value="2">Ensalada de Palta</option>
-                <option value="3">Salmón con Verduras</option>
-                <option value="4">Ensalada Especial</option>
-            </select><br><br><br>
-            <button type="submit">ENVIAR </button><br>
-            <input type="reset" value="Limpiar Campos"><br>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/pediprom.jpg" class="w-100 d-block" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>PedidosYa</h3>
+                            <p>PedidosYa -30% + Envío Gratis </p>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.pedidosya.com.ar/">Acá</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/salud.jpg" class="w-100 d-block" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Aprovechá las promociones y come sano</h3>
+                            <p>Promociones válidas sólo para menúes no promocionales</p>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="menu.html">Acá</a>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/criptopago.JPG" class="w-100 d-block" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Pagá en Criptos</h3>
+                            <p>Recibí un descuento del 10%</p>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.binance.com/es-AR">Acá</a>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <h1 class="g-3 mt-3">Podés encargarnos las mejores comidas sanas de la Capital</h1>
+        <div class="container">
+            <form class="row g-3 mt-3" action="https://formsubmit.co/manugonzo1111@gmail.com" method="post">
+                <div class="col-6">
+                    <label for="emailInput" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email">
+                </div>
+                <div class="col-6">
+                    <label for="inputName" class="form-label">Nombre y apellidos:</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Escribe tu nombre completo">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Dirección:</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Calle/Número/Piso/Departamento">
+                </div>
+                <div class="col-12"><p><STRONG>RECORDÁ QUE LOS ENVÍOS SON SÓLO DENTRO DE CABA</STRONG></p></div>
+                <div class="col-6">
+                    <label for="inputphone" class="form-label">Teléfono:</label>
+                    <input type="number"  class="form-control"  id="inputphone" placeholder="Teléfono">
+                </div>
+                <div class="col-12">
+                    <label for="menus">Menúes:</label>
+                    <select name="menus" id="opc.menu">
+                        <option value="0"></option>
+                        <option value="1">Ensalada de Langostinos</option>
+                        <option value="2">Ensalada de Palta</option>
+                        <option value="3">Salmón con Verduras</option>
+                        <option value="4">PROMO: Ensalada Pollo Especial</option>
+                        <option value="5">PROMO: Ensalada de pollo</option>
+                        <option value="6">PROMO: Ensalada Vegetariana</option>
+                        <option value="7">PROMO: Pechuga de Pollo con guarnición</option>
+                        <option value="8">PROMO: Pollo a la plancha</option>
+                        <option value="9">PROMO: Milanesa de pollo</option>
+                        <option value="10">PROMO: Bife vacuno</option>
+                        <option value="11">PROMO: Albondigas de vacuno</option>
+                        <option value="12">PROMO: Carne de vacuno desmechada</option>
+                        <option value="13">PROMO: Mix Especial</option>
+                        <option value="14">PROMO: Mix Milanesa</option>
+                        <option value="15">PROMO: Mix Albóndigas</option>
+                    </select><br><br>
+                    <button type="submit">ENVIAR </button><br><br>
+                    <input type="reset" value="Limpiar Campos"><br>
+                </div>
+            </form>
+        </div><br>
     
-    </form>
-   </div>
-<br><br><br><br><br>
-    </main>
+  </main>
+  <footer ; position="center" id="contacto">
+    <!-- place footer here -->
+    <br>
+    <p id="pie" style="color:white ;">Encontranos en:</p>
+    <br>
+    <h6 style="color:white ;">CONTACTO</h6>
+    <div class="iframe">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6044973447497!2d-58.38050078459158!3d-34.61416126555798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad662f16055%3A0xc31614b6852ae376!2sVenezuela%20852%2C%20C1095AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1661813418345!5m2!1ses-419!2sar"
+            width="300px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><br>
+    <div style="display:flex ;justify-content:center;align-items:center;" position="center" class="col-12">
+        <div position="center" class="container">
+            <nav position="center" class="social">
+                <a target="_blank" href="https://facebook.com">
+                    <img width="75px" height="75px"class="redes" src="./imagenes/facebook.png" alt="Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img width="75px" height="75px"class="redes" src="./imagenes/instagram.png" alt="instagram"></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=0543874564252">
+                    <img width="75px" height="75px"  class="redes" src="./imagenes/whatsapp.png" alt="whatsapp"> </a>
+            </nav>
+        </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+  </script>
 </body>
-<br><br><br><br><br>
-<!-- Footer------------------------------------------------->
-<iframe src="footer.html" id="alturaFooter"></iframe>
-<!-- Footer------------------------------------------------->
-
 
 </html>
