@@ -77,10 +77,10 @@ a{
 }
 
 #pie{
-    color: white;
-    font-size: 2vw;
-    padding-left: 0%;
-    float: left;
+    color: white !important;
+    font-size: 2vw !important;
+    padding-left: 0% !important;
+    float: left !important;
 }
 
 #logo{
@@ -108,9 +108,9 @@ a{
 
 
 .caja-redes{
-    text-align: center;
-    margin: 0% 8% 0% 0%;
-    padding: 0%;
+    text-align: center !important;
+    margin: 0% 8% 0% 0% !important;
+    padding: 0% !important;
 }
 
  .conten_promo {
@@ -188,7 +188,7 @@ a{
 }
 
 .platos{
-    margin-left: 5%;
+    margin-left: 6%;
     margin-top: 0%;
 }
 
@@ -196,10 +196,11 @@ a{
     position: relative;
     font-family: helena;
     font-size:15vh;
-    margin: -3% 30% 0% 30%;
+    margin: 0% 30% 0% 30%;
     background:white;
     font-weight: 100;
     padding: 0% 0% 0% 0%;
+    text-align: center;
 }
 
 .tarjetaMenu{
@@ -223,24 +224,24 @@ a{
 
 .titulosTarjetas{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45%;
+    
     text-align: left;
-    margin-left: 10%;
-    padding: 2% 0% 0% 0%;
+    margin-left: 0%;
+    padding: 0% 0% 2% 17%;
     position: relative;
    
 }
 
 .parrafosTarjetas{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40%;
+    f
     text-align: left;
-    margin: -3% 0% 0% 0%;
+    margin: -3% 0% 0% 17%;
 }
 
 .precio{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45%;
+    
     font-style:italic;
     margin: 2% 0% 0% 5%;
     float: left;
@@ -254,7 +255,7 @@ a{
     background-color: blue;
     border-color: white;
     border-radius: 0.3vw;
-    margin: 2% 0% 0% 19%;
+    margin: 0% 0% 0% 40%;
     padding: 0.25% 0.5% 0.25% 0.5%;
     opacity: 80%;
 }
@@ -279,7 +280,7 @@ a{
 
 
 #abajo{
-    background-color: black;
+    background-color: black ;
 
 }
 
@@ -309,15 +310,22 @@ a{
   font-size: 30px;
 }
 
+.contactos {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 300%;
+    text-align: center;
+    padding: 2% 0% 2% 0%;
+}
+
 @media only screen and (max-width: 1240px){
     .tarjetaMenu {
         width: 80%;
-
+}
 }
 
-}
 @media only screen and (max-width: 768px){
     .pest{font-size: 2vw;
+}
 }
 .nosotros {
     padding: 2%;
@@ -341,13 +349,6 @@ h4{
     width: 75%;
 }
 
-
-
-}
-
-
-
-
 @media only screen and (max-width: 320px){
     .pest{
         font-size: 3vw;
@@ -358,6 +359,7 @@ h4{
             font-size: 3.5vw;
             text-align: justify;
 }}
+
 h4{
     font-size: 5vw;
 }
@@ -373,3 +375,19 @@ table td img {
     width: 100%;
 }
 
+.animacion{
+    animation-name: promociones;
+    animation-duration: 4s;
+    background-color: rgb(98, 184, 155);
+    color: tomato;
+    text-align: center;
+    font-size: 6vh;
+}
+
+@keyframes promociones{
+    0%      {color:red; font-size: 7vh ;}
+    25%     {color:yellow; font-size: 8vh ;}
+    50%     {color:blue; font-size: 9vh ;}
+    75%     {color:green; font-size: 8vh ;}
+    100%    {color:red; font-size: 7vh ;}
+}

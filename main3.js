@@ -1,4 +1,4 @@
-navegarpie=`        
+/* navegarpie=`        
 <div class="item1" style="background-color: rgb(0, 0, 0)">
     <nav id="pestañas">
         <a class="pest" href="index.html">Nosotros</a>

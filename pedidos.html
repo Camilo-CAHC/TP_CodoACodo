@@ -18,30 +18,7 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <div>
-        <img id="logo" src="./imagenes/logo.png" alt="logo">
-        <span style class="nombre" id="slogan">Salud Viandah</span>
-    </div>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light  border-3 border-bottom ">
-            <div class="container-fluid">
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
-                        <span class="navbar-toggler-icon" ></span>
-                    </button>
-                <div id="MenuNavegacion" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-12 mt-6">
-                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./promociones.html">Promociones</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>    
-
-  </header>
+    <header><script src="./header.js"></script></header>
   <main>
     <br>
         <div class="container mt-3">
@@ -50,6 +27,7 @@
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide">Promo Mercado Pago -30%</li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                    <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -57,7 +35,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Mercado Pago</h3>
                             <p>Promo Mercado Pago -30%</p>
-                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.mercadopago.com.ar">Acá</a>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.mercadopago.com.ar" target="_blank">Acá</a>
 
                         </div>
                     </div>
@@ -66,7 +44,7 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h3>PedidosYa</h3>
                             <p>PedidosYa -30% + Envío Gratis </p>
-                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.pedidosya.com.ar/">Acá</a>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.pedidosya.com.ar/" target="_blank">Acá</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -74,16 +52,16 @@
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Aprovechá las promociones y come sano</h3>
                             <p>Promociones válidas sólo para menúes no promocionales</p>
-                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="menu.html">Acá</a>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="menu.html" target="_blank">Acá</a>
 
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./imagenes/criptopago.JPG" class="w-100 d-block" alt="Third slide">
+                        <img src="./imagenes/criptopago.JPG" class="w-100 d-block" alt="Fourth slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h3>Pagá en Criptos</h3>
                             <p>Recibí un descuento del 10%</p>
-                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.binance.com/es-AR">Acá</a>
+                            <a style="text-decoration:none; color:rgb(247, 247, 252)"  href="https://www.binance.com/es-AR" target="_blank">Acá</a>
 
                         </div>
                     </div>
@@ -145,8 +123,10 @@
         </div><br>
     
   </main>
-  <footer ; position="center" id="contacto">
-    <!-- place footer here -->
+  <script src="./footer.js"></script>
+  <!-- <footer ; position="center" id="contacto">
+    
+    -- place footer here --
     <br>
     <p id="pie" style="color:white ;">Encontranos en:</p>
     <br>
@@ -168,16 +148,18 @@
                     <img width="75px" height="75px"  class="redes" src="./imagenes/whatsapp.png" alt="whatsapp"> </a>
             </nav>
         </div>
-    </div>
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-  </script>
+    </div> -->
+      <!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+  integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+</script>
+
+
+
 </body>
 
 </html>

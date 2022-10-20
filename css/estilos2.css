@@ -26,13 +26,7 @@ header{
     padding-left: 20%;
     
   }
-footer{
-    justify-content: center;
-    justify-items: center;
-    background-color: black;
-    align-content: center;
-    align-items: center;
-}
+
 .container{
     justify-content: center;
 }
