@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><header>
+    <script src="./main.js"></script>
+</header>
+<main>
+    <div id="app">
+        <h1 style="font-family:helena;text-align: center;color: green;padding-top: 2%;">COMIDAS</h1><br>
+        <table>
+            <thead>
+                <th>Nombre</th>
+                <th>Preparacion</th>
+                <th></th>
+            </thead>
+            <tr v-for="elemento in meals">
+                <td>{{elemento.strMeal}}</td>
+                <td>{{elemento.strInstructions}}</td>
+                <td><img width="100" :src="elemento.strMealThumb" :alt="elemento.strMealThumb"></td>
+            </tr>
+        </table>
+    
+    </div><br><br>
+
+</main>
+<footer>
+    <script src="./main3.js"></script>
+    <script src="./main2.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./receta.js"></script>
+</footer>
+    
+</body>
+</html>
