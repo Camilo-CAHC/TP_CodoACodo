@@ -25,9 +25,10 @@ a{
  
  #slogan{
    font-family: Helena;
-   font-size: 4.5vw;
+   font-size: 6vw;
    color: rgb(26, 163, 26);
-   padding-left: 2%;
+   padding-left: 8%;
+   justify-content: center;
    
  }
 
@@ -46,7 +47,7 @@ a{
 
  h4{
     padding: 1%;
-    font-size: 2vw;
+    font-size: 3.5vw;
     padding-left: 2%;
  } 
 
@@ -234,7 +235,7 @@ a{
 
 .parrafosTarjetas{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    f
+    
     text-align: left;
     margin: -3% 0% 0% 17%;
 }
@@ -332,14 +333,7 @@ a{
     font-size: 2.5vw;
     text-align: justify;
 }
-h4{
-    font-size: 3vw;
-}
-#slogan {
-    
-    font-size: 6vw;
-    
-}
+
 .conten_promo {
     display: inline;
     
@@ -360,15 +354,11 @@ h4{
             text-align: justify;
 }}
 
-h4{
-    font-size: 5vw;
-}
-#slogan {
-    font-size: 7vw;
-    
-}
+
 table td img {
-    width: 50px;
+    width: 50%;
+    justify-content: center;
+    padding: 0% 0% 0% 20%;
 }
 .promo{
    margin: 0 auto;
@@ -390,4 +380,18 @@ table td img {
     50%     {color:blue; font-size: 9vh ;}
     75%     {color:green; font-size: 8vh ;}
     100%    {color:red; font-size: 7vh ;}
+}
+
+.preparacion{
+    font-size: 3vh;
+    justify-content: center;
+}
+
+.imagenPreparacion{
+    width: 100%;
+    justify-content: center;
+}
+
+.imagenPromo{
+    padding-left: -200;
 }

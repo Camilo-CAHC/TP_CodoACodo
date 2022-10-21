@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagenes/logo.png">
     <title>Document</title>
 </head>
 <body><header>
@@ -11,17 +12,17 @@
 </header>
 <main>
     <div id="app">
-        <h1 style="font-family:helena;text-align: center;color: green;padding-top: 2%;">COMIDAS</h1><br>
+        <h1 style="font-family:helena;text-align: center;color: green;padding-top: 2%; font-size: 9vh;">COMIDAS</h1><br>
         <table>
             <thead>
-                <th>Nombre</th>
-                <th>Preparacion</th>
+                <th style="font-size: 6vh;">Nombre</th>
+                <th style="font-size: 6vh;">Preparacion</th>
                 <th></th>
             </thead>
             <tr v-for="elemento in meals">
-                <td>{{elemento.strMeal}}</td>
-                <td>{{elemento.strInstructions}}</td>
-                <td><img width="100" :src="elemento.strMealThumb" :alt="elemento.strMealThumb"></td>
+                <td class="preparacion">{{elemento.strMeal}}</td>
+                <td class="preparacion">{{elemento.strInstructions}}</td>
+                <td class="imagenPreparacion"><img  :src="elemento.strMealThumb" :alt="elemento.strMealThumb"></td>
             </tr>
         </table>
     
